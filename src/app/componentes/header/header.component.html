@@ -1,0 +1,43 @@
+<section id="header">
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <img src="../../../assets/banner-argentina-programa.jpg">          
+                
+                <nav id="nav" class="">
+                    <ul id="navmedio">
+                        <li><a href="#header" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                        <li><a href="#acercade" onclick="seleccionar(this)" >Sobre Mi</a></li>
+                        <li><a href="#experiencia" onclick="seleccionar(this)">Experiencia</a></li>
+                        <li><a href="#educacion" onclick="seleccionar(this)">Educacion</a></li>
+                        <li><a href="#hard" onclick="seleccionar(this)">Skills</a></li>
+                        <li><a href="#proyectos" onclick="seleccionar(this)">Proyectos</a></li>
+                    </ul>                        
+                </nav>
+
+                <div id="iconomenu" class="icono" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="redes">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://ar.linkedin.com/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="/login" id="button" type="button" class="btn btn-primary" *ngIf="!isLogged">Ingresar </a>
+                <a href="/login" id="button" type="button" class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged" >Cerrar Sesion </a>
+            </div>
+        </header>
+
+        <div class="presentacion">
+            <p class="bienvenida"> Bienvenidos</p>
+            <h2>A Mi <span>Portfolio WEB</span></h2>
+        </div>
+    </div>
+    
+
+</section>
+
+    <div class="banerpagina">
