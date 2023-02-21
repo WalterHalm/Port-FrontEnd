@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 #header{    
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../../final/src/assets/baner2.jpg);
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../../Port-FrontEnd/src/assets/baner2.jpg);
     background-size: cover;
     background-position: center center;
     height: 100vh;    

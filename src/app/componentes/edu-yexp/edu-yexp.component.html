@@ -1,5 +1,80 @@
 <section id="experiencia">
     <h3 class="titulo-seccion"> Experiencia Laboral.</h3>
+
+
+    <button type="buton" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">
+        Nueva Experiencia
+    </button>
+
+    <div class="fila">
+        <div class="experiencia" *ngFor="let Experiencia of expe">
+
+            <h3>{{Experiencia.nombreE}}</h3>
+            <hr>
+            <h5>{{Experiencia.descripcionE}}</h5>
+            <hr>
+            <p *ngIf="isLogged"><button class="btn btn-success" routerLink="/editexp/{{Experiencia.id}}"><i
+                        class="bi bi-pencil-fill"></i></button></p>
+            <p *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"><i
+                        class="bi bi-trash"></i></button></p>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="educacion">
+    <h3 class="titulo-seccion"> Educacion.</h3>
+
+    <button type="buton" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">
+        Nueva Educacion
+    </button>
+
+    <div class="fila">
+        <div class="educacion" *ngFor="let Educacion of educacion">
+
+            <h3>{{Educacion.nombreE}}</h3>
+            <hr>
+            <h5>{{Educacion.descripcionE}}</h5>
+            <p *ngIf="isLogged"><button class="btn btn-success" routerLink="/editedu/{{Educacion.id}}"><i
+                        class="bi bi-pencil-fill"></i></button></p>
+            <p *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(Educacion.id)"><i
+                        class="bi bi-trash"></i></button></p>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- <section id="educacion">
+        <h3 class="titulo-seccion"> Educacion.</h3>
+
+        <button type="buton" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">
+            Nueva Educacion
+        </button>
+
+        <div class="fila">
+            <div class="educacion" *ngFor="let Educacion of educacion">
+
+                <h3>{{Educacion.nombreE}}</h3>
+                <hr>
+                <h5>{{Educacion.descripcionE}}</h5>
+                <hr>
+                <p *ngIf="isLogged"><button class="btn btn-success" routerLink="/editexp/{{Educacion.id}}"><i
+                            class="bi bi-pencil-fill"></i></button></p>
+                <p *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(Educacion.id)"><i
+                            class="bi bi-trash"></i></button></p>
+
+            </div>
+        </div>
+    </section> 
+
+
+
+         <section id="experiencia">
+    <h3 class="titulo-seccion"> Experiencia Laboral.</h3>
     <div class="fila">
         <div class="experiencia">
             <img src="../../../assets/LOGO-munichajari.png" alt="logochajari">
@@ -31,7 +106,7 @@
     </div>
 </section>
 
-<!--educacion-->
+educacion
 
 <section id="educacion">
     <h3 class="titulo-seccion"> Educacion.</h3>
@@ -94,3 +169,4 @@
         </div>
     </div>
 </section>
+-->

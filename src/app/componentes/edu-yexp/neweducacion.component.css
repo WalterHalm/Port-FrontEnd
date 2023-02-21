@@ -1,0 +1,24 @@
+section {
+    background-color: #ecccd3;
+    padding-bottom: 320px;
+}
+form{
+	width: 450px;;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+    margin-top: 50px;
+	background-color: rgb(238, 97, 31);
+}
+
+form label{
+	width:250px;
+	font-weight:bold;
+	display:inline-block;
+    margin: 5px;
+}
+
+
+button{
+margin-top: 30px;
+}
