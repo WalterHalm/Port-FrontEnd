@@ -22,7 +22,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NewExperienciaComponent } from './componentes/edu-yexp/new-experiencia.component';
 import { EditExperienciaComponent } from './componentes/edu-yexp/edit-experiencia.component';
 import { NeweducacionComponent } from './componentes/edu-yexp/neweducacion.component';
-import { EditeducacionComponent } from './componentes/edu-yexp/editeducacion.component'
+import { EditeducacionComponent } from './componentes/edu-yexp/editeducacion.component';
+import { EditSkillComponent } from './componentes/hard/edit-skill.component';
+import { NewSkillComponent } from './componentes/hard/new-skill.component'
 
 
 
@@ -41,7 +43,9 @@ import { EditeducacionComponent } from './componentes/edu-yexp/editeducacion.com
     NewExperienciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
-    EditeducacionComponent
+    EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent
   ],
   imports: [
     BrowserModule,

@@ -1,23 +1,26 @@
-<div class="container" *ngIf="expLab">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreE"> Nombre del Establecimiento</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE" required>
-                </div>
-    
-                <div class="form-group">
-                    <label for="descripcionE"> Descripcion</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="expLab.descripcionE" required>
-                </div>
-                <button class="btn btn-dark">
-                    Editar Experiencia
-                </button>
-    
-            </form>
+<section>
+    <div class="container" *ngIf="expLab">
+        <div class="row">
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreE"> Nombre del Establecimiento</label>
+                        <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descripcionE"> Descripcion</label>
+                        <input type="text" class="form-control" id="descripcionE" name="descripcionE"
+                            [(ngModel)]="expLab.descripcionE" required>
+                    </div>
+                    <button class="btn btn-dark">
+                        Editar Experiencia
+                    </button>
+
+                </form>
+            </div>
         </div>
+
     </div>
-    
-    </div>
-    
+</section>

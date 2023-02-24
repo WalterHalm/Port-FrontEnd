@@ -126,12 +126,13 @@ transition: .5s;
     margin: auto;
     padding: 100px 15px;
     color: rgb(15, 15, 17);
-    display: flex;
+    display: flex;    
 }
 
 #acercade .contenedor-foto{
     max-width: 250px;
     margin-right: 80px;
+    
 }
 
 #acercade .contenedor-foto img{
@@ -139,6 +140,7 @@ transition: .5s;
     width: 100%;
     border-radius: 10px;
     background-color:rgb(245, 198, 177);
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
 }
 
 #acercade .acercade{
@@ -368,124 +370,25 @@ transition: .5s;
     margin: 10px 0;
 }
 
-.contenedor-skills .skills .barra .barra-progreso1{
-    background-color: #fff;
-    width: 85%;
+.contenedor-skills .skills .barra .barra-progreso{
+    background-color: #fff;        
     height: 10px;
-    animation: progreso1 2s forwards;
+    animation: progreso 5s forwards;
 }
 
-.contenedor-skills .skills .barra .barra-progreso2{
-    background-color: #fff;
-    width: 80%;
-    height: 10px;
-    animation: progreso2 2s forwards;
-}
-
-.contenedor-skills .skills .barra .barra-progreso3{
-    background-color: #fff;
-    width: 75%;
-    height: 10px;
-    animation: progreso3 2s forwards;
-}
-
-.contenedor-skills .skills .barra .barra-progreso4{
-    background-color: #fff;
-    width: 90%;
-    height: 10px;
-    animation: progreso4 2s forwards;
-}
-
-.contenedor-skills .skills .barra .barra-progreso5{
-    background-color: #fff;
-    width: 70%;
-    height: 10px;
-    animation: progreso5 2s forwards;
-}
-
-.contenedor-skills .skills .barra .barra-progreso6{
-    background-color: #fff;
-    width: 90%;
-    height: 10px;
-    animation: progreso6 2s forwards;
-}
-
-.contenedor-skills .skills .barra .barra-progreso7{
-    background-color: #fff;
-    width: 80%;
-    height: 10px;
-    animation: progreso7 2s forwards;
-}
 
 /*Animaciones de las barras*/
 
-@keyframes progreso1{
+@keyframes progreso{
     0% {
         width: 0;
     }
     100%{
-        width: 85%;
-    }
-}
-
-@keyframes progreso2{
-    0% {
-        width: 0;
-    }
-    100%{
-        width: 80%;
+        width: var(skills);
     }
 }
 
 
-@keyframes progreso3{
-    0% {
-        width: 0;
-    }
-    100%{
-        width: 75%;
-    }
-}
-
-
-@keyframes progreso4{
-    0% {
-        width: 0;
-    }
-    100%{
-        width: 90%;
-    }
-}
-
-
-@keyframes progreso5{
-    0% {
-        width: 0;
-    }
-    100%{
-        width: 70%;
-    }
-}
-
-
-@keyframes progreso6{
-    0% {
-        width: 0;
-    }
-    100%{
-        width: 90%;
-    }
-}
-
-
-@keyframes progreso7{
-    0% {
-        width: 0;
-    }
-    100%{
-        width: 80%;
-    }
-}
 
 /*proyectos*/
 

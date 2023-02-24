@@ -1,0 +1,15 @@
+td{
+    display: inline-block;
+    width: 10%;
+    padding-bottom: 15px;
+}
+
+
+@keyframes barra-progreso{
+    0% {
+        width: 0;
+    }
+    100%{
+        width: auto;
+    }
+}

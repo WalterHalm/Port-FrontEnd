@@ -13,10 +13,10 @@
             <hr>
             <h5>{{Experiencia.descripcionE}}</h5>
             <hr>
-            <p *ngIf="isLogged"><button class="btn btn-success" routerLink="/editexp/{{Experiencia.id}}"><i
-                        class="bi bi-pencil-fill"></i></button></p>
-            <p *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"><i
-                        class="bi bi-trash"></i></button></p>
+            <td *ngIf="isLogged"><button class="btn btn-success" routerLink="/editexp/{{Experiencia.id}}"><i
+                        class="bi bi-pencil-fill"></i></button></td>
+            <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"><i
+                        class="bi bi-trash"></i></button></td>
 
         </div>
     </div>
@@ -36,10 +36,10 @@
             <h3>{{Educacion.nombreE}}</h3>
             <hr>
             <h5>{{Educacion.descripcionE}}</h5>
-            <p *ngIf="isLogged"><button class="btn btn-success" routerLink="/editedu/{{Educacion.id}}"><i
-                        class="bi bi-pencil-fill"></i></button></p>
-            <p *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(Educacion.id)"><i
-                        class="bi bi-trash"></i></button></p>
+            <td *ngIf="isLogged"><button class="btn btn-success" routerLink="/editedu/{{Educacion.id}}"><i
+                        class="bi bi-pencil-fill"></i></button></td>
+            <td *ngIf="isLogged"><button class="btn btn-danger" (click)="borrar(Educacion.id)"><i
+                        class="bi bi-trash"></i></button></td>
 
         </div>
     </div>

@@ -1,5 +1,31 @@
 <section id="hard">
     
+    <div class="contenedor-skills" id="skills" >
+        <h3>Hard & Soft Skills</h3>
+        <button type="button" class="btn btn-success" routerLink="/newskill" *ngIf="isLogged">
+            Nueva Skills
+        </button>
+
+        <div class="skills" *ngFor="let skill of skill">
+            <div class="info">
+                <p><span class="lista"></span>{{skill.nombre}}</p>
+                <span class="porcentaje">{{skill.porcentaje}}%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso" [style.width.%]="skill.porcentaje"></div>
+            </div>
+        
+        <td *ngIf="isLogged"><button class="btn btn-success" routerLink="/editskill/{{skill.id}}"><i
+            class="bi bi-pencil-fill"></i></button></td>
+<td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(skill.id)"><i
+            class="bi bi-trash"></i></button></td>
+    </div>
+    </div>
+</section>
+
+
+   <!-- <section id="hard">
+    
     <div class="contenedor-skills" id="skills">
         <h3>Hard & Soft Skills</h3>
         <div class="skills">
@@ -66,4 +92,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> !-->
