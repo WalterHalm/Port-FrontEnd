@@ -24,7 +24,11 @@ import { EditExperienciaComponent } from './componentes/edu-yexp/edit-experienci
 import { NeweducacionComponent } from './componentes/edu-yexp/neweducacion.component';
 import { EditeducacionComponent } from './componentes/edu-yexp/editeducacion.component';
 import { EditSkillComponent } from './componentes/hard/edit-skill.component';
-import { NewSkillComponent } from './componentes/hard/new-skill.component'
+import { NewSkillComponent } from './componentes/hard/new-skill.component';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage'
 
 
 
@@ -45,14 +49,17 @@ import { NewSkillComponent } from './componentes/hard/new-skill.component'
     NeweducacionComponent,
     EditeducacionComponent,
     EditSkillComponent,
-    NewSkillComponent
+    NewSkillComponent,
+    EditAcercaDeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     CargarScriptService], 
