@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+
+
+body {
+    background-color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-white);
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
 
 html {
     scroll-behavior: smooth;
 }
 #header{    
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../../Port-FrontEnd/src/assets/baner2.jpg);
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("https://firebasestorage.googleapis.com/v0/b/portfoliofrontend-18fbe.appspot.com/o/Portfolio%2Fbaner2.jpg?alt=media&token=7c40dc74-6523-4712-80c4-8e581e0095ff");
     background-size: cover;
     background-position: center center;
     height: 100vh;    
@@ -335,7 +338,7 @@ transition: .5s;
 /*HABILIDADES*/
 
 .contenedor-skills{
-    background: linear-gradient(rgb(243, 95, 127),rgba(0,0,0,.2)),url(../src/assets/baner.jpg);   
+    background: linear-gradient(rgb(243, 95, 127),rgba(0,0,0,.2)),url("https://firebasestorage.googleapis.com/v0/b/portfoliofrontend-18fbe.appspot.com/o/Portfolio%2Fbaner.jpg?alt=media&token=52904c7f-d2bc-41cf-9260-3b0571023d51");   
     color: white;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -426,8 +429,10 @@ transition: .5s;
 #contacto{
     padding: 50px 15px;
     background-color:rgb(225, 241, 229);
-}
+    
 
+
+}
 #contacto .titulo-seccion{
     font-size: 28px;
     margin-top: 10px;
@@ -439,6 +444,111 @@ transition: .5s;
     text-align: center;
     margin-bottom: 20px;
 }
+
+#contacto .left-contact {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  
+  #contacto .left-contact h4 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  #contacto .left-contact p {
+    margin: 1rem 0;
+    line-height: 2rem;
+    
+     
+  }
+  
+  #contacto .left-contact .contact-info .contact-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-around
+  }
+  
+  #contacto .left-contact .contact-info .contact-item p {
+    margin: .3rem 0 !important;
+    padding: 0 !important;
+  }
+  
+  #contacto .left-contact .contact-info .contact-item .icon {
+    display: -ms-gcenrid;
+    display: grid;
+    -ms-grid-columns: 40px 1fr;
+        grid-template-columns: 40px 1fr;
+  }
+  
+  #contacto .left-contact .contact-info .contact-item .icon i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.3rem;
+  }
+  
+  #contacto .left-contact .contact-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2rem;
+  }
+  
+  #contacto .left-contact .contact-icon a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: var(--color-white);
+    background-color: var(--color-grey5);
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 0.4rem;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  #contacto .left-contact .contact-icon a:hover {
+    background-color: var(--color-secondary);
+  }
+  
+  #contacto .left-contact .contact-icon a:hover i {
+    color: var(--color-primary);
+  }
+  
+  #contacto .left-contact .contact-icon a i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: space-around;
+    font: 1.3rem;
+  }
+  
+
+
 
 #contacto .contenedor-form{
     max-width: 800px;

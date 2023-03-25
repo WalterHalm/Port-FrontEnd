@@ -2,14 +2,45 @@
 
     <section id="contacto">
     <h3 class="titulo-seccion">Contactanos Ahora</h3>
+    <div class="left-contact">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ubicación</span>
+            </div>
+            <p>
+              <span>Chajari, Argentina</span>
+            </p>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </div>
+            <p>
+              <span>walter_halm@hotmail.com</span>
+            </p>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <i class="fas fa-globe-africa"></i>
+              <span>Idiomas</span>
+            </div>
+            <p>
+              <span>Español/Ingles</span>
+            </p>
+          </div>
+        </div>        
+      </div>
     <div class="contenedor-form">
-        <form action="">
+        <form action="https://formsubmit.co/wali.halm@gmail.com" method="POST">
             <div class="fila mitad">
-                <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                <input type="text" placeholder="Direccion de Corre Electronico" class="input-mitad">
+                <input type="text" name="name" placeholder="Nombre Completo" class="input-mitad" required>
+                <input type="email" name="email" placeholder="Direccion de Corre Electronico" class="input-mitad" required>
             </div>
             <div class="fila">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aqui"
+                <textarea name="comments" cols="30" rows="10" placeholder="Escriba su mensaje aqui"
                     class="input-full"></textarea>
             </div>
             <input type="submit" value="Enviar Mensaje" class="btn-enviar">
