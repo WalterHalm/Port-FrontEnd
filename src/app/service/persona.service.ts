@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-URL = 'backend-walterhalm.koyeb.app/personas/';
+URL = 'https://backend-walterhalm.koyeb.app/personas/';
 
   constructor(private httpClient: HttpClient) { }
 

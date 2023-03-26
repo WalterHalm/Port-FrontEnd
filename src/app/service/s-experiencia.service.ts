@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  expURL = 'backend-walterhalm.koyeb.app/explab/'
+  expURL = 'https://backend-walterhalm.koyeb.app/explab/'
 
   constructor(private httpClient: HttpClient) { }
 

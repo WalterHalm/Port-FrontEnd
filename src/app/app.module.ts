@@ -29,7 +29,7 @@ import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.co
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage'
-
+import { interceptorProvider } from './service/interceptor-service';
 
 
 @NgModule({
@@ -62,8 +62,12 @@ import { provideStorage,getStorage } from '@angular/fire/storage'
     provideStorage(() => getStorage())
   ],
   providers: [
-    CargarScriptService], 
-  
-  bootstrap: [AppComponent]
+    
+    [CargarScriptService], 
+    [interceptorProvider]],
+   
+    bootstrap: [AppComponent]
+    
 })
+
 export class AppModule { }

@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL = 'backend-walterhalm.koyeb.app/educacion/'
+  URL = 'https://backend-walterhalm.koyeb.app/educacion/'
 
   constructor(private httpClient: HttpClient) { }
 

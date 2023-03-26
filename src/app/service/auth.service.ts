@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL='backend-walterhalm.koyeb.app/auth/';
+  authURL='https://backend-walterhalm.koyeb.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
