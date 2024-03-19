@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    URL: 'https://backend-walterhalm.koyeb.app/'
+    URL: 'https://portfoliohalm.onrender.com/'
   };
